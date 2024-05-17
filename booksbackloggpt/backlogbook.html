@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="style.css">
+<html lang="pt-BR">
 
 <head>
-    <title>Backlog de Livros</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Imagem em Células da Tabela</title>
     <style>
+        img {
+            max-width: 100px;
+            /* Ajuste o tamanho da imagem conforme necessário */
+            margin-top: 10px;
+        }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <h1 style="color: yellow;">2021</h1>
-    <input type="file" id="uploadImage" accept="image/*">   
+    <input type="file" id="uploadImage" accept="image/*">
     <table>
         <tr>
             <th>Título</th>
@@ -24,25 +40,7 @@
             <td>J.R.R. Tolkien</td>
             <td><img src="https://m.media-amazon.com/images/I/81MoknVer8L._AC_UF1000,1000_QL80_.jpg"
                     alt="Capa do Livro 1"></td>
-            <td id="fonte">Um dos melhores livros de Tolkien.Fusce et convallis diam, at auctor eros. Donec ultrices,
-                odio eu volutpat consequat, neque enim vestibulum eros, et venenatis sapien nulla quis ante. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque ut pulvinar justo.
-                Integer nec efficitur lacus, convallis gravida lorem. Quisque sit amet vestibulum ex. Aenean egestas
-                mauris et dapibus eleifend. Phasellus pretium, ligula ut pharetra varius, eros libero mattis neque, et
-                posuere ipsum metus quis nisi. Donec interdum sapien purus, et suscipit nulla convallis id. Duis ipsum
-                tortor, blandit sit amet erat a, eleifend sodales odio. Nullam efficitur risus id mauris molestie
-                congue. Mauris nec volutpat felis. Fusce mattis libero risus, gravida auctor purus tempus eu.
-                Suspendisse porttitor volutpat convallis. Curabitur imperdiet viverra lorem vel viverra. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus.
-
-                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam quis urna
-                lectus. Donec efficitur lacinia lacus, bibendum eleifend ligula ultrices nec. Nunc pretium pharetra
-                justo. Proin lobortis, odio nec euismod tempus, velit felis egestas leo, eu varius sapien justo vel
-                magna. Nullam enim massa, bibendum vel sem dictum, scelerisque posuere lacus. Donec mollis metus vitae
-                lorem tempus feugiat. Suspendisse pulvinar accumsan turpis et vehicula. Duis feugiat sapien vel risus
-                facilisis, eu convallis ante rutrum. Fusce ultricies lorem eu magna bibendum lacinia. Nullam eu magna
-                ante. Nulla sit amet porttitor velit. Sed mollis maximus est ac scelerisque. Suspendisse a elementum
-                augue. Sed id orci felis.</td>
+            <td id="fonte">Um dos melhores livros de Tolkien...</td>
         </tr>
         <tr>
             <td>A História de Kullervo</td>
@@ -59,99 +57,51 @@
             <td>Autor do Livro 2</td>
             <td><img src="https://m.media-amazon.com/images/I/81afuJPGh1L.jpg" alt="Capa do Livro 2"></td>
         </tr>
-        <tr id="cell1">
+        <tr>
             <td>Nome do Livro 2</td>
             <td>Autor do Livro 2</td>
-            <td>
+            <td id="cell1">
                 <button onclick="addImage('cell1')">Adicionar Imagem </button>
-                <div id="imageContainer"></div>
-
-                <script src="script.js"></script>
+                <div id="imageContainer1"></div>
             </td>
         </tr>
-        <tr id="cell2">
+        <tr>
             <td>Nome do Livro 2</td>
             <td>Autor do Livro 2</td>
-            <td>
+            <td id="cell2">
                 <button onclick="addImage('cell2')">Adicionar Imagem </button>
-                <div id="imageContainer"></div>
-
-                <script src="script.js"></script>
-
+                <div id="imageContainer2"></div>
             </td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
-        </tr>
-        <tr>
-            <td>Nome do Livro 2</td>
-            <td>Autor do Livro 2</td>
-            <td><img src="caminho/para/imagem2.jpg" alt="Capa do Livro 2"></td>
         </tr>
         <!-- Adicione mais linhas conforme necessário -->
     </table>
+
+    <script>
+        function addImage(cellId) {
+            const input = document.getElementById('uploadImage');
+            const cell = document.getElementById(cellId);
+            const container = cell.querySelector('div');
+
+            if (input.files && input.files[0]) {
+                const file = input.files[0];
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.alt = 'Imagem adicionada';
+
+                    // Limpa o contêiner antes de adicionar uma nova imagem
+                    container.innerHTML = '';
+                    container.appendChild(img);
+                }
+
+                reader.readAsDataURL(file);
+            } else {
+                alert('Nenhum arquivo selecionado.');
+            }
+        }
+    </script>
 </body>
 
 </html>
