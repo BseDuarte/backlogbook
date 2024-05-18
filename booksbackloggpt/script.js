@@ -16,10 +16,20 @@ function addImage(cellId) {
             // Limpa o container antes de adicionar uma nova imagem
             imageContainer.innerHTML = '';
             imageContainer.appendChild(img);
+
+            saveImage(cellId, e.target.result);
         }
 
         reader.readAsDataURL(file);
     } else {
         alert('Nenhum arquivo selecionado.');
+    }
+
+    function saveImage(cellId, imageSrc) {
+            let savedImages = JSON.parse(localStorage.getItem('savedImages')) || {};
+
+            savedImages[cellId] = imageSrc;
+
+            localStorage.setItem('savedImages')
     }
 }

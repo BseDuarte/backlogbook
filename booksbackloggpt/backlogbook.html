@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Imagem em Células da Tabela</title>
     <style>
+        body{   background-color: goldenrod;}
         img {
             max-width: 100px;
             /* Ajuste o tamanho da imagem conforme necessário */
@@ -14,19 +15,27 @@
 
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: c  ollapse;
         }
 
         td {
+            background-color: rgb(167, 136, 225);
             border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
+        }
+        th{
+            background-color: rgb(227, 203, 21);
+        
+        }
+        h1{
+            background-color: rgb(227, 203, 21);
         }
     </style>
 </head>
 
 <body>
-    <h1 style="color: yellow;">2021</h1>
+    <h1 style="color: rgb(84, 14, 213);">My Book's Backlog 2024</h1>
     <input type="file" id="uploadImage" accept="image/*">
     <table>
         <tr>
@@ -71,6 +80,14 @@
             <td id="cell2">
                 <button onclick="addImage('cell2')">Adicionar Imagem </button>
                 <div id="imageContainer2"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Filoteia</td>
+            <td>S. Francisco de Sales</td>
+            <td id="cell3">
+                <button onclick="addImage('cell3')">Adicionar Imagem </button>
+                <div id="imageContainer3"></div>
             </td>
         </tr>
         <!-- Adicione mais linhas conforme necessário -->

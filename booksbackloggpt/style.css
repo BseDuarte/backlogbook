@@ -5,8 +5,8 @@ body {
 table {
   border-collapse: collapse;
   width: 80%;
-  background-color: aliceblue;
-}
+  background-color: rgb(35, 141, 235);
+} 
 
 th,
 td {
@@ -16,7 +16,7 @@ td {
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: purple;
 }
 
 img {
